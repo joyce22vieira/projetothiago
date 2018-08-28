@@ -28,7 +28,7 @@ public class PessoaResource {
 	}
 	
 	@GetMapping("{id}")
-	public Pessoa get(@PathVariable Integer id) {
+	public Pessoa get(@PathVariable("id") Integer id) {
 		return pessoaRepository.getOne(id);
 	}
 	
